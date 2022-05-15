@@ -176,7 +176,11 @@ h1 {
       text-align: center;
       color:white;
 } 
-
+.box {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
 
 #parent {
 
@@ -299,7 +303,7 @@ position: relative;
     }
 
      .textbox2 {
-       min-height: 250px;
+       min-height: 270px;
        margin-top: 30px;
      }
   
@@ -424,19 +428,74 @@ margin-right: auto;
  }
 
 
-@media only screen and (max-width:800){
-
+ @media only screen and (max-width:800px) {
+  .myWork {
+    flex-direction: row;
+    padding-top: 25%;
+  }
   #parent {
     flex-direction: column;
+    align-items:flex-end;
+    justify-content: space-evenly;
+   
   }
   #child1, #child3, #child2 {
+    display:flex;
     flex-direction: row;
+    width: 100%;
+    border-top-right-radius: 0vw;
+    border-top-left-radius: 50vw;
+    border-bottom-left-radius: 50vw;
+    height:12em;
+    align-items: center;
+    justify-content: space-between;
   }
-  .p {
-    display:none;}
-
-
-    .text h4 {
-      font-size: 20px;
-}
-}
+  #roundButtons  {
+    width:100%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+  z-index: 10;
+  }
+  .buttons{
+    width:50px;
+    height:40px;
+  }
+  .logos {
+    width:12rem;
+   position: absolute;
+   margin-right: 0px;
+   margin-left: auto;
+  }
+  .goButton {
+    width:30%;
+  }
+  
+  .textbox1 {
+  position: static;
+  margin-left:12em ;
+  padding-top: 5%;
+  
+  }
+  .textbox2 {
+    display:none;
+  }
+  
+  .text h4 {
+      font-size: 16px;
+  }
+  .meGif, .meGif2 {
+    width:10em;
+  
+    margin-right: 40%;
+    margin-left: 40%;
+    /* margin-top: 50%; */
+  }
+  a{
+    font-size:16px;
+  }
+  #right a {
+    font-size:16px;
+  }
+  }
